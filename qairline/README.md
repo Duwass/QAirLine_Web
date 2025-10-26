@@ -1,17 +1,5 @@
 # QAirline - Microservices Architecture
 
-Hệ thống quản lý đặt vé máy bay sử dụng kiến trúc microservices với API Gateway.
-
-## 📋 Mục lục
-
-- [Tổng quan](#tổng-quan)
-- [Cấu trúc dự án](#cấu-trúc-dự-án)
-- [Công nghệ sử dụng](#công-nghệ-sử-dụng)
-- [Cài đặt](#cài-đặt)
-- [Chạy dự án](#chạy-dự-án)
-- [Chạy test](#chạy-test)
-- [API Endpoints](#api-endpoints)
-
 ## 🎯 Tổng quan
 
 Dự án QAirline được xây dựng theo kiến trúc microservices, bao gồm:
@@ -80,16 +68,16 @@ cd api-gateway
 npm install
 
 # Cài đặt từng service
-cd ../services/booking-service
+cd .../services/booking-service
 npm install
 
-cd ../flight-service
+cd .../flight-service
 npm install
 
-cd ../offer-service
+cd .../offer-service
 npm install
 
-cd ../user-service
+cd .../user-service
 npm install
 ```
 
@@ -227,16 +215,6 @@ Tất cả requests đi qua API Gateway tại `http://localhost:3000`
 3. **Port conflicts**: Kiểm tra không có service nào khác đang sử dụng các port 3000-3004
 4. **Environment variables**: Nhớ tạo file `.env` cho từng service
 
-## 🤝 Đóng góp
-
-Khi phát triển tính năng mới:
-
-1. Tạo branch mới từ `main`
-2. Viết code và test cases
-3. Chạy test để đảm bảo không có lỗi: `npm test`
-4. Commit với message rõ ràng (theo Conventional Commits)
-5. Tạo Pull Request
-
 ## 🐛 Debug
 
 Nếu gặp lỗi:
@@ -245,7 +223,3 @@ Nếu gặp lỗi:
 2. Kiểm tra kết nối database
 3. Kiểm tra port đã được sử dụng chưa
 4. Xem API Gateway logs để biết request được route đến đâu
-
-## 📞 Liên hệ
-
-Nếu có thắc mắc, liên hệ team lead hoặc tạo issue trên GitHub.
